@@ -1,7 +1,7 @@
 import { UserConfig } from '@commitlint/types';
 
 const config: UserConfig = {
-  ignores: [(commit) => commit === 'Automated dependency upgrades'],
+  ignores: [(commit) => commit.includes('Automated dependency upgrades')],
 };
 
 export default config;
